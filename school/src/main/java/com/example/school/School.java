@@ -1,4 +1,4 @@
-package com.example.student;
+package com.example.school;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -16,11 +16,11 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Student {
+public class School {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String firstName;
-    private String lastName;
-    private Integer schoolId;
+    private String name;
+    private String email;
+    
 }
