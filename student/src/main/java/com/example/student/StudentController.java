@@ -13,6 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 
 
@@ -33,5 +34,9 @@ public class StudentController {
         return ResponseEntity.ok(service.findAllStudents());
     }
     
+    @GetMapping("/school/{school-id}")
+    public ResponseEntity<List<Student>> findAllStudents(@PathVariable("school-id") Integer schoolId){
+        return ResponseEntity.ok(service.findAllStudentsBySchool(schoolId));
+    }
     
 }
