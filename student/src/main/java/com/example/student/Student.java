@@ -1,5 +1,6 @@
 package com.example.student;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -22,5 +23,6 @@ public class Student {
     private Integer id;
     private String firstName;
     private String lastName;
+    @Column(name = "school_id")
     private Integer schoolId;
 }
