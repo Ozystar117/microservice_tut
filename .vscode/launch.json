@@ -1,0 +1,42 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "GatewayApplication",
+            "request": "launch",
+            "mainClass": "com.example.gateway.GatewayApplication",
+            "projectName": "gateway"
+        },
+        {
+            "type": "java",
+            "name": "StudentApplication",
+            "request": "launch",
+            "mainClass": "com.example.student.StudentApplication",
+            "projectName": "student"
+        },
+        {
+            "type": "java",
+            "name": "SchoolApplication",
+            "request": "launch",
+            "mainClass": "com.example.school.SchoolApplication",
+            "projectName": "school"
+        },
+        {
+            "type": "java",
+            "name": "DiscoveryApplication",
+            "request": "launch",
+            "mainClass": "com.example.discovery.DiscoveryApplication",
+            "projectName": "discovery"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ConfigserverApplication<configserver>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.configserver.ConfigserverApplication",
+            "projectName": "configserver",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
